@@ -1,0 +1,10 @@
+language: cpp
+
+matrix:
+    include:
+        # Linux gcc 4.8
+        - os: linux
+          dist: trusty
+          compiler: gcc
+script:
+  - make
