@@ -4,7 +4,7 @@ env:
   global:
     # COVERITY_SCAN_TOKEN
     # ** specific to your project **
-    - secure: "TWtUVIemw3mk-TVlsKRYxQ"
+    secure: "mdkOzyxWX0VLwxlFYh1TEMZODUPIKaGY5DBn/tUNxt+dy1VEgGKBTvC4z1twXS1aXN1LF4BzdPjB+UmTPmTLjuyP9XvHJibTb1gunQPFK39bXCoukQl6iAaHezTJUMn8XWVNnxNxzYrOd1wCNZzl2PYHloFNiCOH2AEUUWB6Zck="
 
 matrix:
   include:
@@ -22,9 +22,8 @@ addons:
     # GitHub project metadata
     # ** specific to your project **
     project:
-      name: Oloshka/dummy_test
-      version: 1.0
-      description: experimental
+      name: "Oloshka/dummy_test"
+      description: "experimental"
 
     # Where email notification of build analysis results will be sent
     notification_email: nurmukhametov.alex@gmail.com
@@ -40,4 +39,4 @@ addons:
     # Pattern to match selecting branches that will run analysis. We recommend leaving this set to 'coverity_scan'.
     # Take care in resource usage, and consider the build frequency allowances per
     #   https://scan.coverity.com/faq#frequency
-    # branch_pattern: coverity_scan
+    branch_pattern: master
