@@ -4,8 +4,6 @@ compiler:
 env:
   global:
   - secure: Sn714S+3g/qz30a8EhhW6s/g7UmDSIF0cpqq8V+I5dEtDBzesGqCJUo2qjhNdg34ZGSO+grdK7eojJE7tan6d7PVDyoMTYYcAzYjbog7RBFl2PlmvpUny4skuHdARpk0YcVB0hRZaIeCjdR6IKAvpmib+aHPdAGA7Yo9yQhANrzrmjr567Zgb/r9HuC0+If2mhnC6FdGNyP1KvvR6qqGTIa2ojMtuoNy5gFntIkmkF2hLa4Nf+Qjn3lW2IzrJcPGeCwoXLXWoRplwoAbg4FpAm82z88Ej9aV9MtLeSDgmIZPJJobRpUhnan46uJoIc2cw/QQmd1Q8CzNAwpUVy/vfwcVusr0SWAtfF3LMuil/JX0aiE3X4HaT/EZayUk7+GPGQffX5juAtfyCsYNkpzLShWUHZ7afcz7qeviSb3UljWC5LoJFW3eml7w9VlONCU0wjhZWKfrnlid6Aevt4m50LVkruG+0H2JaZ5/NzUtcDs7g1Cz0H9ZEiA3tQxhhkDADuRvBfynbaCwlH3bwA+LxFnutIlgQsz3jcEjVOq4dewIM5pnMl1P7//kJeOI589HH5A3BMDrgZ2ouikg8a/7l3hMUjzNMTbXmi5mVRZ+hE/Iyb3/nV1RsqFhe40mvwaYXwvll6IWRBrBjz/TPlye9u95V4zassSkRC4pyUOn8aQ=
-    #before_install:
-    #- echo -n | openssl s_client -connect https://scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
 addons:
   coverity_scan:
     project:
