@@ -1,4 +1,6 @@
-language: cpp
+language: c
+compiler:
+  - gcc
 
 env:
   global:
@@ -6,37 +8,15 @@ env:
     # ** specific to your project **
     secure: "mdkOzyxWX0VLwxlFYh1TEMZODUPIKaGY5DBn/tUNxt+dy1VEgGKBTvC4z1twXS1aXN1LF4BzdPjB+UmTPmTLjuyP9XvHJibTb1gunQPFK39bXCoukQl6iAaHezTJUMn8XWVNnxNxzYrOd1wCNZzl2PYHloFNiCOH2AEUUWB6Zck="
 
-matrix:
-  include:
-    # Linux gcc 4.8
-    - os: linux
-      dist: trusty
-      compiler: gcc
-
 script:
   - make
 
 addons:
   coverity_scan:
-
-    # GitHub project metadata
-    # ** specific to your project **
     project:
       name: "Oloshka/dummy_test"
       description: "experimental"
-
-    # Where email notification of build analysis results will be sent
     notification_email: nurmukhametov.alex@gmail.com
-
-    # Commands to prepare for build_command
-    # ** likely specific to your build **
     # build_command_prepend: ./configure
-
-    # The command that will be added as an argument to "cov-build" to compile your project for analysis,
-    # ** likely specific to your build **
     build_command: make
-
-    # Pattern to match selecting branches that will run analysis. We recommend leaving this set to 'coverity_scan'.
-    # Take care in resource usage, and consider the build frequency allowances per
-    #   https://scan.coverity.com/faq#frequency
     branch_pattern: master
