@@ -1,21 +1,16 @@
 language: c
 compiler:
-  - gcc
-
+- gcc
 env:
   global:
-    - secure: "AsAweHXrwsxDLKFaU7DRWDDk5qwoOzLliMh61/8USEHyx/2HDxI9g4s+I77NrLygpBt7NKwQnH0bVVnYKnJQWvqCUBr/sWZZ6dxBSQOvkLymIkCsT3a+b42+XPXef/ZSYAjsG/GGvmOfFUpH0boL5Hp7kgYsimImmUZksbSMtxI="
-
+  - secure: cdjbMGzPiGkQ+2F+Qs6S7o/er3U6pc6nGcjGA93p82ZwE2d0cD+GDXnoQwqp3LMLmQGgBILU7Sg+zLk4IPoqcJA8nrIKq3Nmniq0JE2R5BQBQcg9xu5gJrCblNWiLLJ7M+DnVVoLBkUI46kmYjRLCUTx309SrcGKrhty70NfbtTNQJqTKisTTxuOLWGAtqTMyN4zNKnf6NpnxkvkNO8wUOgShVR+M6FgpA0l+aM4sGVvViE7ZSFcHMzDcCHBf5zCw3owxZi9OCe9TB6ZCxJtIdEYQFlRlUPUO+LQHy8Mwk8qbdGPOpzLCCZXYsyJ48/lnMOfZgWtGJxbB9g7dDundvRqx/TgdNjYqhk7QX1l3zN5UX0BXESxw/nf2Vi7jp+pip8iYtFfUwzempP/Qiit2T/JtmQ6eFyKSzctytNH1IfcOh1PSFDbVK9V+MNZ0qRzweb+kAK+QRUCXIUjdxxWoHlnsXl8ICbWkf+MjhCzBlG1B5SrYcFHwHSwkllUJSKsKZNvTfZ7jcfMRztbQ8Jnwqx7lWQ0gfe+LmiHrAkUg00pQGGfb8S7gdhJUpKGU6BG2jwLJdGqHb/yg+9br6Mm2aO6kfJhiI5yldy1QY3O0PcZA0ebuAdGJwlGwusRfbqXU61dSoGdZ+BkK/69BvfqqEmSEczeMnW/6EfTxtejGyw=
 addons:
   coverity_scan:
     project:
-      name: "Oloshka/dummy_test"
-      description: "experimental"
+      name: Oloshka/dummy_test
+      description: experimental
     notification_email: nurmukhametov.alex@gmail.com
-    # build_command_prepend: ./configure
     build_command: make
     branch_pattern: master
-
 script:
-  - make
-
+- make
