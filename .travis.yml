@@ -4,12 +4,7 @@ compiler:
 
 env:
   global:
-    # COVERITY_SCAN_TOKEN
-    # ** specific to your project **
-    secure: "mdkOzyxWX0VLwxlFYh1TEMZODUPIKaGY5DBn/tUNxt+dy1VEgGKBTvC4z1twXS1aXN1LF4BzdPjB+UmTPmTLjuyP9XvHJibTb1gunQPFK39bXCoukQl6iAaHezTJUMn8XWVNnxNxzYrOd1wCNZzl2PYHloFNiCOH2AEUUWB6Zck="
-
-script:
-  - make
+    - secure: "AsAweHXrwsxDLKFaU7DRWDDk5qwoOzLliMh61/8USEHyx/2HDxI9g4s+I77NrLygpBt7NKwQnH0bVVnYKnJQWvqCUBr/sWZZ6dxBSQOvkLymIkCsT3a+b42+XPXef/ZSYAjsG/GGvmOfFUpH0boL5Hp7kgYsimImmUZksbSMtxI="
 
 addons:
   coverity_scan:
@@ -20,3 +15,7 @@ addons:
     # build_command_prepend: ./configure
     build_command: make
     branch_pattern: master
+
+script:
+  - make
+
